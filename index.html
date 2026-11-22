@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Games Arena</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg container arena-container" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="#hero"><span aria-hidden="true"><i class="arena-icon" aria-hidden="true">&#xf11b;</i></span> GameArena</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="main-menu">
+        <div class="navbar-nav gap-lg-2 me-auto">
+          <a class="nav-link" href="#hero">Home</a>
+<a class="nav-link" href="#latest-games">OUR GAMES</a>
+<a class="nav-link" href="#what-we-do">What We Do</a>
+<a class="nav-link" href="#team-members">Our Team</a>
+<a class="nav-link" href="#contact">Contact Us</a>
+        </div>
+        <div class="nav-actions d-flex gap-3 align-items-center">
+          <button class="icon-button" type="button" aria-label="Notifications" data-bs-toggle="modal" data-bs-target="#updates"><i class="arena-icon" aria-hidden="true">&#xf0f3;</i></button>
+          <a class="icon-button" href="#contact" aria-label="Messages"><i class="arena-icon" aria-hidden="true">&#xf075;</i></a>
+          <button class="btn btn-lime px-4" type="button" data-bs-toggle="modal" data-bs-target="#sign-in">Sign In</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero d-flex align-items-center" id="hero">
+      <div class="container arena-container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h1>THE ULTIMATE <em>GAMING</em> EXPERIENCE</h1>
+            <p>Join millions of gamers worldwide in the most competitive eSports tournaments. Experience next-level gaming with cutting-edge technology and endless possibilities.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-lime button-large" href="#latest-games">Start Gaming Now</a>
+              <button class="btn btn-outline-lime button-large" type="button" data-bs-toggle="modal" data-bs-target="#tournaments">Watch Tournaments</button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-photo">
+              <img src="images/hero-img.webp" alt="Gaming setup with three monitors and RGB lighting">
+              <div class="player-count"><span aria-hidden="true"><i class="arena-icon" aria-hidden="true">&#xf091;</i></span><div><small>Active Players</small><strong>2.5M+</strong></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space" id="latest-games">
+      <div class="container arena-container">
+        <div class="section-heading text-center"><p class="eyebrow">Our Games</p><h2>Our Latest Games</h2></div>
+        <div class="games-track" id="games-track" aria-label="Latest games">
+          <article class="game-card" tabindex="0">
+            <img src="images/latest-games-1.webp" alt="">
+            <div class="game-caption"><small>Adventure · Multiplayer</small><h3>Alien Companions</h3></div>
+          </article>
+          <article class="game-card" tabindex="0">
+            <img src="images/latest-games-2.webp" alt="">
+            <div class="game-caption"><small>Racing · Sci-Fi</small><h3>Cyber Run 2099</h3></div>
+          </article>
+          <article class="game-card" tabindex="0">
+            <img src="images/latest-games-3.webp" alt="">
+            <div class="game-caption"><small>Action · GeForce</small><h3>The Legend of Zelda: Tears of the Kingdom</h3></div>
+          </article>
+          <article class="game-card" tabindex="0">
+            <img src="images/latest-games-4.webp" alt="">
+            <div class="game-caption"><small>RPG · Fantasy</small><h3>Aetheria Chronicles</h3></div>
+          </article>
+          <article class="game-card" tabindex="0">
+            <img src="images/latest-games-5.webp" alt="">
+            <div class="game-caption"><small>Shooter · Co-op</small><h3>Warfront Protocol</h3></div>
+          </article>
+          <article class="game-card" tabindex="0">
+            <img src="images/latest-games-6.webp" alt="">
+            <div class="game-caption"><small>Football · Fantasy</small><h3>Shot Striker</h3></div>
+          </article>
+          <article class="game-card" tabindex="0">
+            <img src="images/latest-games-7.webp" alt="">
+            <div class="game-caption"><small>Sports · League</small><h3>Epic Gaming League</h3></div>
+          </article>
+          <article class="game-card" tabindex="0">
+            <img src="images/latest-games-8.webp" alt="">
+            <div class="game-caption"><small>Space · Exploration</small><h3>Barren alien worlds</h3></div>
+          </article>
+          <article class="game-card" tabindex="0">
+            <img src="images/latest-games-9.webp" alt="">
+            <div class="game-caption"><small>Action · Futuristic</small><h3>Cloveland Quest</h3></div>
+          </article>
+        </div>
+        <div class="game-controls d-flex justify-content-center align-items-center flex-wrap gap-3">
+          <button class="arrow" type="button" id="previous-game" aria-label="Previous game">←</button>
+          <button class="arrow" type="button" id="next-game" aria-label="Next game">→</button>
+          <button class="btn btn-outline-lime button-large ms-sm-3" id="all-games" type="button" aria-controls="games-track" aria-expanded="false">VIEW ALL GAMES</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space" id="what-we-do">
+      <div class="container arena-container">
+        <div class="section-heading text-center"><p class="eyebrow">What We Do</p><h2>More Than Just Games</h2><p class="intro">We Build <em>Interactive</em> Journeys</p></div>
+        <div class="row row-cols-2 row-cols-lg-4 g-4">
+          <div class="col"><div class="service-card"><span aria-hidden="true"><i class="arena-icon" aria-hidden="true">&#xf108;</i></span><h3>PC Game<br>Development</h3></div></div>
+<div class="col"><div class="service-card"><span aria-hidden="true"><i class="arena-icon" aria-hidden="true">&#xf3cd;</i></span><h3>Mobile Game<br>Development</h3></div></div>
+<div class="col"><img class="service-image" src="images/what-we-do-1.webp" alt="Gaming artwork"></div>
+<div class="col"><div class="service-card"><span aria-hidden="true"><i class="arena-icon" aria-hidden="true">&#xf70c;</i></span><h3>AR/VR<br>Solutions</h3></div></div>
+<div class="col"><div class="service-card"><span aria-hidden="true"><i class="arena-icon" aria-hidden="true">&#xf5ae;</i></span><h3>AR/VR<br>Design</h3></div></div>
+<div class="col"><img class="service-image" src="images/what-we-do-2.webp" alt="Gaming artwork"></div>
+<div class="col"><div class="service-card"><span aria-hidden="true"><i class="arena-icon" aria-hidden="true">&#xf11b;</i></span><h3>PS4 Game<br>Development</h3></div></div>
+<div class="col"><div class="service-card"><span aria-hidden="true"><i class="arena-icon" aria-hidden="true">&#xf1b2;</i></span><h3>3D<br>Modelings</h3></div></div>
+        </div>
+      </div>
+      <div class="partners" aria-label="Partner logos">
+        <div class="partner-rail"><div><img src="images/logo-1.jpg" alt="" loading="lazy"><img src="images/logo-2.jpg" alt="" loading="lazy"><img src="images/logo-3.jpg" alt="" loading="lazy"><img src="images/logo-4.jpg" alt="" loading="lazy"><img src="images/logo-5.jpg" alt="" loading="lazy"><img src="images/logo-6.jpg" alt="" loading="lazy"><img src="images/logo-7.jpg" alt="" loading="lazy"><img src="images/logo-8.jpg" alt="" loading="lazy"><img src="images/logo-9.jpg" alt="" loading="lazy"><img src="images/logo-10.jpg" alt="" loading="lazy"></div><div aria-hidden="true"><img src="images/logo-1.jpg" alt="" loading="lazy"><img src="images/logo-2.jpg" alt="" loading="lazy"><img src="images/logo-3.jpg" alt="" loading="lazy"><img src="images/logo-4.jpg" alt="" loading="lazy"><img src="images/logo-5.jpg" alt="" loading="lazy"><img src="images/logo-6.jpg" alt="" loading="lazy"><img src="images/logo-7.jpg" alt="" loading="lazy"><img src="images/logo-8.jpg" alt="" loading="lazy"><img src="images/logo-9.jpg" alt="" loading="lazy"><img src="images/logo-10.jpg" alt="" loading="lazy"></div></div>
+        <div class="partner-rail reverse"><div><img src="images/logo-1.jpg" alt="" loading="lazy"><img src="images/logo-2.jpg" alt="" loading="lazy"><img src="images/logo-3.jpg" alt="" loading="lazy"><img src="images/logo-4.jpg" alt="" loading="lazy"><img src="images/logo-5.jpg" alt="" loading="lazy"><img src="images/logo-6.jpg" alt="" loading="lazy"><img src="images/logo-7.jpg" alt="" loading="lazy"><img src="images/logo-8.jpg" alt="" loading="lazy"><img src="images/logo-9.jpg" alt="" loading="lazy"><img src="images/logo-10.jpg" alt="" loading="lazy"></div><div aria-hidden="true"><img src="images/logo-1.jpg" alt="" loading="lazy"><img src="images/logo-2.jpg" alt="" loading="lazy"><img src="images/logo-3.jpg" alt="" loading="lazy"><img src="images/logo-4.jpg" alt="" loading="lazy"><img src="images/logo-5.jpg" alt="" loading="lazy"><img src="images/logo-6.jpg" alt="" loading="lazy"><img src="images/logo-7.jpg" alt="" loading="lazy"><img src="images/logo-8.jpg" alt="" loading="lazy"><img src="images/logo-9.jpg" alt="" loading="lazy"><img src="images/logo-10.jpg" alt="" loading="lazy"></div></div>
+      </div>
+    </section>
+
+    <section class="section-space" id="team-members">
+      <div class="container arena-container">
+        <div class="section-heading text-center"><p class="eyebrow">Our Team</p><h2>Our Best Team Members</h2><p class="intro">Meet the professional gamers and experts behind our success</p></div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <article class="team-card" tabindex="0">
+            <img src="images/avatar-1.webp" alt="Alex Chen" loading="lazy">
+            <div class="team-caption">
+              <h3>Alex "Phantom" Chen</h3>
+              <p>Pro Player - VALORANT</p><small>World Champion 2023</small>
+              <strong class="nickname">PHANTOM</strong>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="team-card" tabindex="0">
+            <img src="images/avatar-2.webp" alt="Ali Ahmed" loading="lazy">
+            <div class="team-caption">
+              <h3>Ali "Nova" Ahmed</h3>
+              <p>Pro Player - League of Legends</p><small>MVP 2023 Season</small>
+              <strong class="nickname">NOVA</strong>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="team-card" tabindex="0">
+            <img src="images/avatar-3.webp" alt="Marcus Rodriguez" loading="lazy">
+            <div class="team-caption">
+              <h3>Marcus "Viper" Rodriguez</h3>
+              <p>Head Coach - CS:GO</p><small>5x Major Winner</small>
+              <strong class="nickname">VIPER</strong>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="team-card" tabindex="0">
+            <img src="images/avatar-4.webp" alt="Seif Usama" loading="lazy">
+            <div class="team-caption">
+              <h3>Seif "Saga" Usama</h3>
+              <p>Strategic Analyst</p><small>Data Science Expert</small>
+              <strong class="nickname">SAGA</strong>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="team-card" tabindex="0">
+            <img src="images/avatar-5.webp" alt="Jake Wilson" loading="lazy">
+            <div class="team-caption">
+              <h3>Jake "Storm" Wilson</h3>
+              <p>Pro Player - Apex Legends</p><small>Rising Star 2023</small>
+              <strong class="nickname">STORM</strong>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="team-card" tabindex="0">
+            <img src="images/avatar-6.webp" alt="David Park" loading="lazy">
+            <div class="team-caption">
+              <h3>David "Titan" Park</h3>
+              <p>Team Captain - Dota 2</p><small>The International Winner</small>
+              <strong class="nickname">TITAN</strong>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="team-card" tabindex="0">
+            <img src="images/avatar-7.webp" alt="Khaled Ali" loading="lazy">
+            <div class="team-caption">
+              <h3>Khaled "Phoenix" Ali</h3>
+              <p>Content Creator</p><small>2M+ Followers</small>
+              <strong class="nickname">PHOENIX</strong>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="team-card" tabindex="0">
+            <img src="images/avatar-8.webp" alt="Ryan Miller" loading="lazy">
+            <div class="team-caption">
+              <h3>Ryan "Ghost" Miller</h3>
+              <p>Team Manager</p><small>Operations Lead</small>
+              <strong class="nickname">GHOST</strong>
+            </div>
+          </article>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space contact-section" id="contact">
+      <div class="container arena-container">
+        <div class="section-heading text-center"><p class="eyebrow">Contact Us</p><h2>Get In Touch</h2><p class="intro">Have questions or need support? We're here to help!</p></div>
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <article class="info-card"><b aria-hidden="true"><i class="arena-icon" aria-hidden="true">&#xf3c5;</i></b><div><h3>Our Location</h3><p>123 Gaming Street, Esports City, EC 12345</p></div></article>
+            <article class="info-card"><b aria-hidden="true"><i class="arena-icon" aria-hidden="true">&#xf095;</i></b><div><h3>Phone Number</h3><a href="tel:+15551234567">+1 (555) 123-4567</a></div></article>
+            <article class="info-card"><b aria-hidden="true"><i class="arena-icon" aria-hidden="true">&#xf0e0;</i></b><div><h3>Email Address</h3><a href="mailto:contact@gamearena.com">contact@gamearena.com</a></div></article>
+            <article class="community"><h3>Join Our Community</h3><p>Connect with us on social media for the latest updates</p><div class="socials"><a href="https://x.com" aria-label="X">𝕏</a> <a href="https://facebook.com" aria-label="Facebook">f</a> <a href="https://instagram.com" aria-label="Instagram">◎</a> <a href="https://youtube.com" aria-label="YouTube">▶</a> <a href="https://twitch.tv" aria-label="Twitch">▣</a></div></article>
+          </div>
+          <div class="col-lg-7">
+            <div class="form-panel">
+              <h3>Send us a Message</h3>
+              <form id="contact-form">
+                <div class="row g-3">
+                  <div class="col-sm-6"><label class="form-label" for="first-name">First Name</label><input class="form-control" id="first-name" placeholder="John" required></div>
+                  <div class="col-sm-6"><label class="form-label" for="last-name">Last Name</label><input class="form-control" id="last-name" placeholder="Doe" required></div>
+                  <div class="col-12"><label class="form-label" for="email">Email Address</label><input class="form-control" id="email" type="email" placeholder="john@example.com" required></div>
+                  <div class="col-12">
+                    <label class="form-label" for="subject">Subject</label>
+                    <select class="form-select" id="subject">
+                      <option>General Inquiry</option><option>Tournament Support</option><option>Technical Issue</option><option>Partnership</option><option>Media Request</option>
+                    </select>
+                  </div>
+                  <div class="col-12"><label class="form-label" for="message">Message</label><textarea class="form-control" id="message" rows="4" placeholder="Tell us how we can help..." required></textarea></div>
+                  <div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="newsletter"><label class="form-check-label" for="newsletter">Subscribe to our newsletter for gaming updates</label></div></div>
+                  <div class="col-12"><button class="btn btn-lime w-100 py-3" type="submit">Send Message <span aria-hidden="true">➤</span></button><p id="form-status" class="form-status mb-0" role="status"></p></div>
+                </div>
+              </form>
+              <div class="stats row text-center"><div class="col"><strong>24/7</strong><small>Support Available</small></div><div class="col"><strong>&lt;1hr</strong><small>Average Response</small></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container arena-container">
+      <div class="row g-4">
+        <div class="col-md-4"><a class="brand" href="#hero"><i class="arena-icon" aria-hidden="true">&#xf11b;</i> GameArena</a><p class="mt-3">The ultimate destination for competitive gaming, esports tournaments, and gaming community.</p><div class="socials"><a href="https://x.com" aria-label="X">𝕏</a> <a href="https://facebook.com" aria-label="Facebook">f</a> <a href="https://instagram.com" aria-label="Instagram">◎</a> <a href="https://youtube.com" aria-label="YouTube">▶</a> <a href="https://twitch.tv" aria-label="Twitch">▣</a></div></div>
+        <div class="col-6 col-md"><h4>Games</h4><ul class="list-unstyled"><li><a href="#latest-games">VALORANT</a></li><li><a href="#latest-games">League of Legends</a></li><li><a href="#latest-games">CS:GO</a></li><li><a href="#latest-games">Dota 2</a></li><li><a href="#latest-games">Apex Legends</a></li></ul></div><div class="col-6 col-md"><h4>Tournaments</h4><ul class="list-unstyled"><li><a href="#latest-games">Upcoming Events</a></li><li><a href="#latest-games">Live Matches</a></li><li><a href="#latest-games">Results</a></li><li><a href="#latest-games">Rankings</a></li><li><a href="#latest-games">Schedule</a></li></ul></div><div class="col-6 col-md"><h4>Support</h4><ul class="list-unstyled"><li><a href="#contact">Help Center</a></li><li><a href="#contact">Contact Us</a></li><li><a href="#contact">Bug Reports</a></li><li><a href="#contact">Feature Requests</a></li><li><a href="#contact">Community Guidelines</a></li></ul></div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-3"><small>© 2025 GameArena. All rights reserved.</small><div class="d-flex flex-wrap gap-3"><button data-bs-toggle="modal" data-bs-target="#privacy" type="button">Privacy Policy</button><button data-bs-toggle="modal" data-bs-target="#terms" type="button">Terms of Service</button><button data-bs-toggle="modal" data-bs-target="#cookies" type="button">Cookie Policy</button></div></div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="updates" tabindex="-1" aria-labelledby="updates-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="updates-title">Notifications</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="modal-body"><p class="mb-0">You have no new notifications.</p></div>
+    </div></div>
+  </div>
+<div class="modal fade" id="sign-in" tabindex="-1" aria-labelledby="sign-in-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="sign-in-title">Sign In</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="modal-body"><p class="mb-0">Account sign-in is unavailable in this demo.</p></div>
+    </div></div>
+  </div>
+<div class="modal fade" id="tournaments" tabindex="-1" aria-labelledby="tournaments-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="tournaments-title">Watch Tournaments</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="modal-body"><a class="btn btn-lime" href="https://www.twitch.tv/directory/category/esports">Browse live esports streams</a></div>
+    </div></div>
+  </div>
+<div class="modal fade" id="privacy" tabindex="-1" aria-labelledby="privacy-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="privacy-title">Privacy Policy</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="modal-body"><p class="mb-0">The contact form runs in your browser. It does not transmit your details.</p></div>
+    </div></div>
+  </div>
+<div class="modal fade" id="terms" tabindex="-1" aria-labelledby="terms-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="terms-title">Terms of Service</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="modal-body"><p class="mb-0">GameArena is a demonstration landing page.</p></div>
+    </div></div>
+  </div>
+<div class="modal fade" id="cookies" tabindex="-1" aria-labelledby="cookies-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="cookies-title">Cookie Policy</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="modal-body"><p class="mb-0">This page does not set cookies.</p></div>
+    </div></div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
